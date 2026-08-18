@@ -6,7 +6,7 @@ import numpy as np
 import cv2
 
 
-data_root = Path(__file__).resolve().parents[1] / "data" / "raw" / "nuclei_dataset"
+data_root = setting.data_path
 SPLIT = setting.split
 img_size = setting.img_size
 cv2.setNumThreads(0)
@@ -72,7 +72,7 @@ def load_image(image_id: str, split: str = "train", root=data_root) -> np.ndarra
     return read_img(path_for_each_id(image_id, split, root)["images"])
 
 def load_mask(image_id: str, split: str = "train", root=data_root) -> np.ndarray:
-    return read_mask(path_for_each_id(image_id, split, root)["labels"])
+    return read_mask(path_for_each_id(image_id, split, root)["masks"])
 
 def load_labels(image_id: str, split: str = "train", root=data_root) -> np.ndarray:
     return read_label(path_for_each_id(image_id, split, root)["labels"])
@@ -83,4 +83,5 @@ def load_all(image_id: str, split: str = "train", root=data_root):
 
 def load_corrupted(stem: str, root=data_root) -> np.ndarray:
     return read_img(corrupted_path(stem, root))
+
 
