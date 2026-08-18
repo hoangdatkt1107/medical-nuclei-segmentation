@@ -3,3 +3,8 @@ __pycache__/
 data/
 *.pdf
 venv/
+# temporary ignore
+notebooks/
+outputs/
+prompts/
+src/eda.py

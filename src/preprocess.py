@@ -32,18 +32,20 @@ def normalise(gray: np.ndarray, mode:str = "fixed") -> np.ndarray:
         return np.zeros_like(gray) if hi - lo < 1e-6 else (gray - lo) / (hi - lo)
     raise ValueError("unkown provided normalise method")
 
-def resize_if_needed(img_arr: np.ndarray, is_mask: bool, size: float = setting.img_size):
-    if not img_arr:
+def resize_if_needed(img_arr: np.ndarray, is_mask: bool, size: int = setting.img_size):
+    if img_arr is None:
         raise ValueError("no image is inserted into resize function")
     if img_arr.shape[:2] == (size, size):
         return img_arr
+    if is_mask:
+        out = cv2.resize(img_arr.astype(np.uint8), (size,size), interpolation=cv2.INTER_NEAREST)
+        return out.astype(img_arr.dtype)
     else:
-        interp = cv2.INTER_NEAREST if is_mask else cv2.INTER_LINEAR
-        out = cv2.resize(img_arr, size, interpolation=interp)
+        out = cv2.resize(img_arr, (size,size), interpolation=cv2.INTER_LINEAR)
         return out.astype(img_arr.dtype)
 
 def process(rgb: np.ndarray, gray_method: str = "blue", norm: str = "fixed",
              size: int = setting.img_size) -> np.ndarray:
-    gray = resize_if_needed(to_grayscale(rgb, gray_method), size, is_mask=False)
+    gray = resize_if_needed(to_grayscale(rgb, gray_method), is_mask=False, size=size)
     return normalise(gray, norm)
 
