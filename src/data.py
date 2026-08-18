@@ -84,7 +84,3 @@ def load_all(image_id: str, split: str = "train", root=data_root):
 def load_corrupted(stem: str, root=data_root) -> np.ndarray:
     return read_img(corrupted_path(stem, root))
 
-if __name__ == "__main__":
-    test = load_all(image_id="test_001", split="test")
-    print(test)
-
