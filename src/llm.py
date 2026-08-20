@@ -22,7 +22,7 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 def load_prompt(prompt_name: str) -> str:
     prompt_path = Path(PROMPT_DIR) / f"{prompt_name}.txt"
     if not prompt_path.exists():
-        raise FileNotFoundError(f"Prompt file {prompt_path} does not exist.")
+        raise FileNotFoundError(f"Prompt file {prompt_path} does not exist")
     with open(prompt_path, "r") as f:
         return f.read().strip()
 
@@ -85,7 +85,7 @@ def ask_json(prompt: str, image=None, retries: int = 2, **kwargs) -> tuple[dict,
             return extract_json(text), text
         except ValueError:
             repair = (f"{prompt}\n\nYour previous reply was not valid JSON:\n{text}\n\n"
-                      f"Reply again with the JSON object only, no explanation, no code fences.")
+                      f"Reply again with the JSON object only, no explanation, no code fences")
             text = ask(repair, image, json_mode=True, **kwargs)
     return extract_json(text), text
 
