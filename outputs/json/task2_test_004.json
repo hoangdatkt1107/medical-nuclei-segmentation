@@ -1,0 +1,19 @@
+{
+  "prompt": "numbers_first",
+  "seconds": 3.9,
+  "missing_keys": [],
+  "extra_keys": [
+    "summary"
+  ],
+  "record": {
+    "n_objects": 71,
+    "density_class": "normal",
+    "shape_regularity": "regular",
+    "quality_flag": "ok",
+    "summary": "The image contains 71 objects, with a moderate density spread across the image. The objects are generally regular in shape, with a mean eccentricity of 0.61 and a mean area of 199 pixels."
+  },
+  "raw": "{\n  \"n_objects\": 71,\n  \"density_class\": \"normal\",\n  \"shape_regularity\": \"regular\",\n  \"quality_flag\": \"ok\",\n  \"summary\": \"The image contains 71 objects, with a moderate density spread across the image. The objects are generally regular in shape, with a mean eccentricity of 0.61 and a mean area of 199 pixels.\"\n}",
+  "image_id": "test_004",
+  "summary_sent": "Image: test_004 (256 x 256 pixels)\nObjects detected: 71\nTotal area covered by objects: 21.6% of the image\nObject area in pixels: mean 199, median 196, min 18, max 530, std 117\nEccentricity: mean 0.61, std 0.19 (0 is a circle, 1 is a line)\nSolidity: mean 0.94 (1 means a convex, unbroken shape)\nMean intensity inside objects: 0.726 on a 0 to 1 scale\nMedian distance to the nearest other object: 15.3 pixels",
+  "n_measured": 71
+}

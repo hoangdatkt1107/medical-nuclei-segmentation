@@ -1,0 +1,9 @@
+base_id,variant,n_objects,mean_area,area_fraction,dice_vs_clean_truth,density_class,quality_flag
+test_000,clean,10,152.7,0.0233,0.9971,normal,ok
+test_000,blur,9,332.0,0.0456,0.6785,normal,ok
+test_000,clean,10,152.7,0.0233,0.9971,normal,ok
+test_000,lowcontrast,1,65532.0,0.9999,0.0457,sparse,ok
+test_004,clean,72,196.7,0.2161,0.9962,normal,ok
+test_004,blur,73,399.1,0.4445,0.6546,normal,ok
+test_004,clean,72,196.7,0.2161,0.9962,normal,ok
+test_004,lowcontrast,1,65532.0,0.9999,0.3558,sparse,ok

@@ -1,0 +1,9 @@
+base_id,variant,modality,image_quality,features
+test_000,clean,fluorescence microscopy,acceptable,multiple circular fluorescent spots; varying sizes of spots; spots scattered across the image
+test_000,blur,microscopy,acceptable,multiple small blue circles; varying brightness; random distribution
+test_000,clean,fluorescence microscopy,acceptable,multiple circular fluorescent spots; varying sizes of spots; spots scattered across the image
+test_000,lowcontrast,microscopy,good,multiple small circles; varying brightness; random distribution
+test_004,clean,fluorescence microscopy,good,"blue, circular shapes; varying sizes; irregular spacing"
+test_004,blur,microscopy,acceptable,blue dots; irregular shapes; varying brightness
+test_004,clean,fluorescence microscopy,good,"blue, circular shapes; varying sizes; irregular spacing"
+test_004,lowcontrast,microscopy,good,multiple circular shapes; dark gray background; varying sizes of circles

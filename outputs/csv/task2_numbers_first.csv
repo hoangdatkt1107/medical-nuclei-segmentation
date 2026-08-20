@@ -1,0 +1,13 @@
+image_id,n_measured,n_objects_llm,density_llm,density_true,shape_regularity,quality_flag,missing_keys,seconds
+test_000,10,10,normal,sparse,regular,ok,,3.4
+test_001,21,21,normal,normal,regular,ok,,2.3
+test_002,36,36,normal,normal,regular,ok,,3.4
+test_003,24,24,normal,normal,regular,ok,,3.5
+test_004,71,71,normal,dense,regular,ok,,3.9
+test_005,32,32,normal,clustered,regular,ok,,3.3
+test_006,9,9,normal,sparse,regular,ok,,3.6
+test_007,30,30,normal,normal,regular,ok,,3.7
+test_008,30,30,normal,normal,regular,ok,,3.6
+test_009,27,27,normal,normal,regular,ok,,3.6
+test_010,74,74,normal,dense,regular,ok,,3.5
+test_011,24,24,normal,clustered,regular,ok,,3.5

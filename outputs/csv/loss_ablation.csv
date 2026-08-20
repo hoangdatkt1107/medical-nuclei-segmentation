@@ -1,0 +1,4 @@
+loss,val_dice,test_dice,test_iou,count_MAE
+bce,0.9971,0.9971,0.9942,2.67
+dice,0.9964,0.9961,0.9922,2.42
+bce_dice,0.9971,0.997,0.994,2.33
