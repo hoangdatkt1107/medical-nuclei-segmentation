@@ -20,14 +20,28 @@ class Setting(BaseSettings):
     norm: str = "fixed" # there are 2 options:  fixed and per_image
 
     #prompts
-    prompt_dir = Path(__file__).resolve().parent / "prompts"
-    out_dir = Path(__file__).resolve().parent / "outputs" / "json"
+    prompt_dir: Path = Path(__file__).resolve().parent / "prompts"
+    out_dir: Path = Path(__file__).resolve().parent / "outputs" / "json"
     ollama_url: str = "http://localhost:11434/api/generate"
-    vision_model: str = "llama3.2-vision"
-    text_model: str = "llama3"
+    ollama_healcheck_url: str = "http://localhost:11434/api/tags"
+    vision_model: str = "gemma3:4b"
+    text_model: str = "llama3:latest"
+    num_predict: int = 1024   # headroom for the narrative field
 
     # feature
-    vision_keys = ["modality", "tissue_type", "notable_features", "image_quality"]
-    feature_keys = ["n_objects", "density_class", "shape_regularity", "quality_flag"]
+    vision_keys: list = ["modality", "tissue_type", "notable_features", "image_quality"]
+    feature_keys: list = ["n_objects", "density_class", "shape_regularity", "quality_flag"]
+    properties: tuple = ("label", "area", "eccentricity", "solidity", "mean_intensity", "perimeter", "centroid")
+    min_size: int = 30          # minimum object area in pixels
+    min_distance: int = 2       # watershed seed spacing in pixels
+    # unet
+    base_channels: int = 16
+    epochs: int = 40
+    lr: float = 1e-3
+    loss: str = "bce_dice"      # there are 3 options: bce, dice and bce_dice
+    model_dir: Path = Path(__file__).resolve().parent / "outputs" / "models"
+    fig_dir: Path = Path(__file__).resolve().parent / "outputs" / "figures"
+    csv_dir: Path = Path(__file__).resolve().parent / "outputs" / "csv"
+
 setting = Setting()
 
