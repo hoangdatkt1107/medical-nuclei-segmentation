@@ -1,0 +1,16 @@
+You are looking at one microscopy image. Describe only what is visually present.
+Do not diagnose, do not name a disease, do not guess at a patient.
+
+Reply with a single JSON object and nothing else:
+
+{
+  "modality": "the imaging technique, e.g. fluorescence microscopy, histology, x-ray",
+  "tissue_type": "what the sample appears to be, or \"uncertain\"",
+  "notable_features": ["short phrases describing shape, spacing, brightness, texture"],
+  "image_quality": "good | acceptable | poor, followed by a short reason"
+}
+
+Rules:
+- if a field cannot be judged from the image, write "uncertain" rather than guessing
+- notable_features must hold between 2 and 5 entries
+- no text before or after the JSON, no code fences

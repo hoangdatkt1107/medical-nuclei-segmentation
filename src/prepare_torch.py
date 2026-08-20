@@ -111,7 +111,7 @@ class CorruptedNucleiDataset(Dataset):
         return image, self.base_ids[index], self.corruptions[index]
 
     def raw(self, index: int):
-        """(corrupted_rgb, clean_rgb, clean_mask) the side-by-side the robustness figure needs."""
+        """(corrupted_rgb, clean_rgb, clean_mask) the side-by-side the robustness figure needs"""
         clean_rgb, clean_mask, _ = load_all(self.base_ids[index], "test", self.root)
         return load_corrupted(self.stems[index], self.root), clean_rgb, clean_mask
 

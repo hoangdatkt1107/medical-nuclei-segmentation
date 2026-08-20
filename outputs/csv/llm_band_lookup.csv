@@ -1,0 +1,5 @@
+n_objects,nearest_neighbour,expected,llm_answer,rule_answer
+78,15.2,dense,normal,dense
+8,33.9,sparse,normal,sparse
+24,22.0,normal,normal,normal
+32,10.1,clustered,normal,clustered

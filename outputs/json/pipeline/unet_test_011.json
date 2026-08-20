@@ -1,0 +1,25 @@
+{
+  "image_id": "test_011",
+  "split": "test",
+  "source": "unet",
+  "seconds": 4.2,
+  "measured": {
+    "n_objects": 25,
+    "mean_area": 147.2,
+    "area_fraction": 0.0562,
+    "mean_eccentricity": 0.65,
+    "nearest_neighbour": 19.7
+  },
+  "missing_keys": [],
+  "number_issues": [],
+  "summary_sent": "Image: test_011 (256 x 256 pixels)\nObjects detected: 25\nTotal area covered by objects: 5.6% of the image\nObject area in pixels: mean 147, median 133, min 47, max 379, std 96\nEccentricity: mean 0.65, std 0.15 (0 is a circle, 1 is a line)\nSolidity: mean 0.95 (1 means a convex, unbroken shape)\nMean intensity inside objects: 0.740 on a 0 to 1 scale\nMedian distance to the nearest other object: 19.7 pixels",
+  "record": {
+    "image_id": "test_011",
+    "n_objects": 25,
+    "mean_area": 147,
+    "density_class": "normal",
+    "quality_flag": "ok",
+    "narrative": "The image test_011 contains 25 objects, with a mean area of 147 pixels. The objects are relatively evenly spaced, with a median distance to the nearest other object of 19.7 pixels, indicating a normal density. The objects are also mostly convex and unbroken, with a mean solidity of 0.95, suggesting a high level of quality in the segmentation."
+  },
+  "raw": "{\n  \"image_id\": \"test_011\",\n  \"n_objects\": 25,\n  \"mean_area\": 147,\n  \"density_class\": \"normal\",\n  \"quality_flag\": \"ok\",\n  \"narrative\": \"The image test_011 contains 25 objects, with a mean area of 147 pixels. The objects are relatively evenly spaced, with a median distance to the nearest other object of 19.7 pixels, indicating a normal density. The objects are also mostly convex and unbroken, with a mean solidity of 0.95, suggesting a high level of quality in the segmentation.\"\n}"
+}

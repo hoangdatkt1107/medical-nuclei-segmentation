@@ -40,7 +40,6 @@ def get_dataloaders(batch_size: int = 8,
     return train_loader, val_loader
 
 def get_test_loader(batch_size: int = 1, **kwargs):
-    """batch_size=1 by default, the end-to-end pipeline emits one JSON record per image, so
-    there is nothing worth batching"""
+    """batch_size=1 by default, the end-to-end pipeline emits one JSON record per image, so there is nothing worth batching"""
     ds = NucleiDataset(split="test", return_id=True, **kwargs)
     return DataLoader(ds, batch_size=batch_size, shuffle=False)
