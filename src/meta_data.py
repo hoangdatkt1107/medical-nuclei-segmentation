@@ -2,6 +2,7 @@ from __future__ import annotations
 from config import setting
 import pandas as pd
 from pathlib import Path
+from typing import Optional
 
 def load_metadata(root=setting.data_path) -> pd.DataFrame:
     return pd.read_csv(Path(root) / "metadata.csv").set_index("image_id")
