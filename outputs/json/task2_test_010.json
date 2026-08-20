@@ -1,0 +1,19 @@
+{
+  "prompt": "numbers_first",
+  "seconds": 3.5,
+  "missing_keys": [],
+  "extra_keys": [
+    "summary"
+  ],
+  "record": {
+    "n_objects": 74,
+    "density_class": "normal",
+    "shape_regularity": "regular",
+    "quality_flag": "ok",
+    "summary": "The image contains 74 objects, with a moderate density and regular shapes. The mean intensity inside objects is relatively high, suggesting a high-quality image."
+  },
+  "raw": "{\n  \"n_objects\": 74,\n  \"density_class\": \"normal\",\n  \"shape_regularity\": \"regular\",\n  \"quality_flag\": \"ok\",\n  \"summary\": \"The image contains 74 objects, with a moderate density and regular shapes. The mean intensity inside objects is relatively high, suggesting a high-quality image.\"\n}",
+  "image_id": "test_010",
+  "summary_sent": "Image: test_010 (256 x 256 pixels)\nObjects detected: 74\nTotal area covered by objects: 20.2% of the image\nObject area in pixels: mean 179, median 136, min 18, max 678, std 129\nEccentricity: mean 0.65, std 0.16 (0 is a circle, 1 is a line)\nSolidity: mean 0.94 (1 means a convex, unbroken shape)\nMean intensity inside objects: 0.749 on a 0 to 1 scale\nMedian distance to the nearest other object: 15.5 pixels",
+  "n_measured": 74
+}

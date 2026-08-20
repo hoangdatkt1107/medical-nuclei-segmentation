@@ -1,0 +1,19 @@
+{
+  "prompt": "numbers_first",
+  "seconds": 3.7,
+  "missing_keys": [],
+  "extra_keys": [
+    "summary"
+  ],
+  "record": {
+    "n_objects": 30,
+    "density_class": "normal",
+    "shape_regularity": "regular",
+    "quality_flag": "ok",
+    "summary": "The image contains 30 objects, with a moderate density and regular shapes. The mean intensity inside objects is relatively high, indicating a high level of staining or labeling."
+  },
+  "raw": "{\n  \"n_objects\": 30,\n  \"density_class\": \"normal\",\n  \"shape_regularity\": \"regular\",\n  \"quality_flag\": \"ok\",\n  \"summary\": \"The image contains 30 objects, with a moderate density and regular shapes. The mean intensity inside objects is relatively high, indicating a high level of staining or labeling.\"\n}",
+  "image_id": "test_007",
+  "summary_sent": "Image: test_007 (256 x 256 pixels)\nObjects detected: 30\nTotal area covered by objects: 7.2% of the image\nObject area in pixels: mean 157, median 131, min 48, max 431, std 105\nEccentricity: mean 0.55, std 0.17 (0 is a circle, 1 is a line)\nSolidity: mean 0.95 (1 means a convex, unbroken shape)\nMean intensity inside objects: 0.722 on a 0 to 1 scale\nMedian distance to the nearest other object: 18.3 pixels",
+  "n_measured": 30
+}

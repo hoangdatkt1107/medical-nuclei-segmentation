@@ -1,0 +1,19 @@
+{
+  "prompt": "numbers_first",
+  "seconds": 3.4,
+  "missing_keys": [],
+  "extra_keys": [
+    "summary"
+  ],
+  "record": {
+    "n_objects": 36,
+    "density_class": "normal",
+    "shape_regularity": "regular",
+    "quality_flag": "ok",
+    "summary": "The image contains 36 objects, with a moderate density and regular shapes. The mean intensity inside objects is relatively high, suggesting a high-quality image."
+  },
+  "raw": "{\n  \"n_objects\": 36,\n  \"density_class\": \"normal\",\n  \"shape_regularity\": \"regular\",\n  \"quality_flag\": \"ok\",\n  \"summary\": \"The image contains 36 objects, with a moderate density and regular shapes. The mean intensity inside objects is relatively high, suggesting a high-quality image.\"\n}",
+  "image_id": "test_002",
+  "summary_sent": "Image: test_002 (256 x 256 pixels)\nObjects detected: 36\nTotal area covered by objects: 8.8% of the image\nObject area in pixels: mean 160, median 145, min 28, max 377, std 84\nEccentricity: mean 0.61, std 0.16 (0 is a circle, 1 is a line)\nSolidity: mean 0.94 (1 means a convex, unbroken shape)\nMean intensity inside objects: 0.686 on a 0 to 1 scale\nMedian distance to the nearest other object: 15.3 pixels",
+  "n_measured": 36
+}

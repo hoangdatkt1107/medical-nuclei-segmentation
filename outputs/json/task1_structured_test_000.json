@@ -1,0 +1,22 @@
+{
+  "image_id": "test_000",
+  "prompt": "vlm_structured",
+  "seconds": 2.5,
+  "missing_keys": [],
+  "extra_keys": [
+    "reason"
+  ],
+  "record": {
+    "modality": "fluorescence microscopy",
+    "tissue_type": "uncertain",
+    "notable_features": [
+      "multiple circular fluorescent spots",
+      "varying sizes of spots",
+      "spots scattered across the image",
+      "some spots are elongated"
+    ],
+    "image_quality": "acceptable",
+    "reason": "image is somewhat grainy"
+  },
+  "raw": "{\n  \"modality\": \"fluorescence microscopy\",\n  \"tissue_type\": \"uncertain\",\n  \"notable_features\": [\"multiple circular fluorescent spots\", \"varying sizes of spots\", \"spots scattered across the image\", \"some spots are elongated\"],\n  \"image_quality\": \"acceptable\",\n  \"reason\": \"image is somewhat grainy\"\n}"
+}
