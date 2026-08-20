@@ -1,0 +1,19 @@
+Below are measurements taken from a segmented microscopy image by an image analysis
+pipeline. You cannot see the image. Base every statement only on these numbers.
+
+{{FEATURES}}
+
+Reply with a single JSON object and nothing else:
+
+{
+  "n_objects": integer, how many objects were measured,
+  "density_class": "sparse | normal | dense | clustered",
+  "shape_regularity": "regular | mixed | irregular, judged from eccentricity and area spread",
+  "quality_flag": "ok | suspect, with suspect meaning the numbers look unreliable",
+  "summary": "two sentences a biologist could read, referring to the numbers"
+}
+
+Rules:
+- do not invent measurements that are not listed above
+- if the numbers are not enough to judge a field, write "uncertain"
+- no text before or after the JSON, no code fences

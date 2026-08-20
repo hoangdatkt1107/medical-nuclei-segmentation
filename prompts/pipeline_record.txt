@@ -1,0 +1,26 @@
+Below are measurements taken from a microscopy image by an automated segmentation pipeline.
+You cannot see the image. Base every statement only on these numbers.
+
+{{FEATURES}}
+
+Reply with a single JSON object and nothing else:
+
+{
+  "image_id": "copy the image id exactly as given above",
+  "n_objects": "copy the number of objects detected, as an integer",
+  "mean_area": "copy the mean object area in pixels, as a number",
+  "density_class": "sparse | normal | dense | clustered",
+  "quality_flag": "ok | suspect, where suspect means the measurements look unreliable",
+  "narrative": "one paragraph of three to four sentences that a biologist could read, quoting the numbers above"
+}
+
+Rules:
+- copy image_id, n_objects and mean_area exactly, do not recompute or round them
+- choose density_class with these bands, measured on the training images:
+    objects <= 13                                  -> sparse
+    objects 14 to 40, nearest neighbour >= 12 px   -> normal
+    objects >= 41, nearest neighbour >= 12 px      -> dense
+    nearest neighbour < 12 px, any count           -> clustered
+- do not invent measurements that are not listed above
+- do not diagnose, do not name a disease
+- no text before or after the JSON, no code fences
