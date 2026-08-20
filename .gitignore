@@ -1,10 +1,14 @@
-__pycache__/
-.vscode/
-data/
-*.pdf
 venv/
-# temporary ignore
-notebooks/
-outputs/
-prompts/
-src/eda.py
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+
+# de bai, khong nen public trong repo
+Assignment*.pdf
+
+# dataset, tai theo huong dan trong README
+data/
+
+# checkpoint, train lai mat khoang 2 phut
+outputs/models/
