@@ -1,10 +1,8 @@
-__pycache__/
-.vscode/
-data/
-*.pdf
 venv/
-# temporary ignore
-notebooks/
-outputs/
-prompts/
-src/eda.py
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+Assignment*.pdf
+data/
+outputs/models/
